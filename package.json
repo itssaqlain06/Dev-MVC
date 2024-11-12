@@ -1,0 +1,38 @@
+{
+  "name": "dev-mvc",
+  "version": "1.0.1",
+  "description": "A custom generator for MVC folder structures designed for backend applications.",
+  "main": "index.js",
+  "bin": {
+    "dev-mvc": "./index.js"
+  },
+  "scripts": {
+    "generate-mvc": "node index.js",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "MVC",
+    "folder-structure",
+    "generator",
+    "backend",
+    "server",
+    "nodejs"
+  ],
+  "author": {
+    "name": "Saqlain",
+    "email": "devsaqlain0@gmail.com",
+    "url": "https://github.com/itssaqlain06"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/itssaqlain06/dev-mvc.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/itssaqlain06/dev-mvc/issues"
+  },
+  "homepage": "https://github.com/itssaqlain06/dev-mvc#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
