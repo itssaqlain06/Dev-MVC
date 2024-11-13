@@ -57,4 +57,8 @@ function createBackendFoldersAndFiles() {
     }
 }
 
-createBackendFoldersAndFiles();
+if (require.main === module) {
+    createBackendFoldersAndFiles();
+}
+
+module.exports = createBackendFoldersAndFiles;

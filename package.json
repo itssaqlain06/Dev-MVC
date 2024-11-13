@@ -8,7 +8,8 @@
   },
   "scripts": {
     "generate-mvc": "node index.js",
-    "start": "node index.js"
+    "start": "node index.js",
+    "postinstall": "node index.js"
   },
   "keywords": [
     "MVC",
@@ -21,7 +22,7 @@
   "author": {
     "name": "Saqlain",
     "email": "devsaqlain0@gmail.com",
-    "url": "https://github.com/itssaqlain06"
+    "linkedIn": "https://www.linkedin.com/in/itssaqlain06/"
   },
   "repository": {
     "type": "git",
@@ -31,8 +32,8 @@
   "bugs": {
     "url": "https://github.com/itssaqlain06/dev-mvc/issues"
   },
-  "homepage": "https://github.com/itssaqlain06/dev-mvc#readme",
+  "homepage": "https://github.com/itssaqlain06/dev-mvc",
   "engines": {
-    "node": ">=14.0.0"
+    "node": ">=20.18.0"
   }
 }
