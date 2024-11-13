@@ -27,8 +27,10 @@ function displayBranding() {
 function createBackendFoldersAndFiles() {
     displayBranding();
 
+    const baseDir = path.join(process.cwd(), '..', '..');
+
     Object.entries(folderStructure).forEach(([folder, files]) => {
-        const dirPath = path.join(process.cwd(), folder);
+        const dirPath = path.join(baseDir, folder);
         if (!fs.existsSync(dirPath)) {
             fs.mkdirSync(dirPath, { recursive: true });
             console.log(`Created folder: ${dirPath}`);
@@ -48,7 +50,7 @@ function createBackendFoldersAndFiles() {
         });
     });
 
-    const entryFile = path.join(process.cwd(), 'server.js');
+    const entryFile = path.join(baseDir, 'server.js');
     if (!fs.existsSync(entryFile)) {
         fs.writeFileSync(entryFile, '');
         console.log('Created: server.js');
