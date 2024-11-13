@@ -35,8 +35,5 @@
   "homepage": "https://github.com/itssaqlain06/dev-mvc",
   "engines": {
     "node": ">=20.18.0"
-  },
-  "dependencies": {
-    "dev-mvc": "^1.0.2"
   }
 }
