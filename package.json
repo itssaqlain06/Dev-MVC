@@ -1,6 +1,6 @@
 {
   "name": "dev-mvc",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Automate the creation of a Node.js MVC folder structure for backend applications. Boost productivity with dev-mvc CLI.",
   "main": "index.js",
   "bin": {
