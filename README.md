@@ -119,10 +119,12 @@ Submit issues or pull requests on the official [GitHub repository](https://githu
 👤 **Saqlain**
 
 - GitHub: [itssaqlain06](https://github.com/itssaqlain06)
-- LinkedIn: [Saqlain's LinkedIn](https://www.linkedin.com/in/itssaqlain06/)
+- LinkedIn: [itssaqlain06](https://www.linkedin.com/in/itssaqlain06/)
 
 ---
 
 ## License
 
 `dev-mvc` is open-source software licensed under the [MIT License](https://opensource.org/licenses/MIT).
+
+---
