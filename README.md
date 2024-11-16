@@ -125,6 +125,10 @@ Submit issues or pull requests on the official [GitHub repository](https://githu
 
 ## License
 
-`dev-mvc` is open-source software licensed under the [MIT License](https://opensource.org/licenses/MIT).
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
+
+- License: MIT License
+- Keywords: MIT, Open Source, dev-mvc License, Node.js MVC License
+- Project Homepage: [https://github.com/itssaqlain06/dev-mvc](https://github.com/itssaqlain06/dev-mvc)
 
 ---
