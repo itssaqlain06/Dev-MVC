@@ -1,7 +1,7 @@
 {
   "name": "dev-mvc",
   "version": "1.1.1",
-  "description": "A custom generator for MVC folder structures designed for backend applications.",
+  "description": "Automate the creation of a Node.js MVC folder structure for backend applications. Boost productivity with dev-mvc CLI.",
   "main": "index.js",
   "bin": {
     "dev-mvc": "./index.js"
@@ -12,12 +12,15 @@
     "postinstall": "node index.js"
   },
   "keywords": [
+    "Node.js",
     "MVC",
     "folder-structure",
-    "generator",
     "backend",
-    "server",
-    "nodejs"
+    "CLI",
+    "nodejs",
+    "project-generator",
+    "nodejs-backend",
+    "automated-setup"
   ],
   "author": {
     "name": "Saqlain",
@@ -32,8 +35,5 @@
   "bugs": {
     "url": "https://github.com/itssaqlain06/dev-mvc/issues"
   },
-  "homepage": "https://github.com/itssaqlain06/dev-mvc",
-  "engines": {
-    "node": ">=20.18.0"
-  }
+  "homepage": "https://github.com/itssaqlain06/dev-mvc"
 }
