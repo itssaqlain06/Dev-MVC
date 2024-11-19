@@ -129,6 +129,15 @@ Submit issues or pull requests on the official [GitHub repository](https://githu
 
 ---
 
+## 🔗 Links
+
+[![GitHub](https://img.shields.io/badge/itssaqlain06-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/itssaqlain06) 
+[![LinkedIn](https://img.shields.io/badge/-itssaqlain06-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/itssaqlain06) 
+[![Gmail](https://img.shields.io/badge/Gmail-itssaqlain06-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:itssaqlain06@gmail.com) 
+[![Instagram](https://img.shields.io/badge/-itssaqlain06-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/itssaqlain06)
+
+---
+
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
