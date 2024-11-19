@@ -131,19 +131,10 @@ Submit issues or pull requests on the official [GitHub repository](https://githu
 
 ## 🔗 Links
 
-<a href="https://github.com/itssaqlain06" target="_blank">
-  <img src="https://img.shields.io/badge/itssaqlain06-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
-</a>
-<a href="https://linkedin.com/in/itssaqlain06" target="_blank">
-  <img src="https://img.shields.io/badge/-itssaqlain06-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
-</a>
-<a href="mailto:itssaqlain06@gmail.com" target="_blank">
-  <img src="https://img.shields.io/badge/-itssaqlain06-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail">
-</a>
-<a href="https://www.instagram.com/itssaqlain06" target="_blank">
-  <img src="https://img.shields.io/badge/-itssaqlain06-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram">
-</a>
-
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:itssaqlain06@gmail.com) 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/itssaqlain06) 
+[![GitHub](https://img.shields.io/badge/Github-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/itssaqlain06) 
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/itssaqlain06)
 
 ---
 
