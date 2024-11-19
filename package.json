@@ -12,12 +12,15 @@
     "postinstall": "node index.js"
   },
   "keywords": [
-    "Node.js",
+    "dev-mvc",
+    "project-setup",
+    "backend-setup",
     "MVC",
     "folder-structure",
     "backend",
     "CLI",
     "nodejs",
+    "expressjs",
     "project-generator",
     "nodejs-backend",
     "automated-setup"

@@ -1,6 +1,8 @@
-# dev-mvc: Simplified Node.js MVC Folder Generator
+# Node.js MVC Structure Generator: dev-mvc
 
-**`dev-mvc`** is a powerful CLI tool designed to **automate the creation of MVC folder structures** for Node.js backend applications. Save time and focus on writing code with this streamlined setup.
+**Tired of manually setting up folder structures for your Node.js backend projects?** `dev-mvc` is a powerful Node.js CLI tool designed to **automate the creation of a standardized MVC folder structure**, saving you time and effort. Focus on writing code with this streamlined setup!
+
+**Keywords:** Node.js MVC, MVC Generator, Backend Structure, Node.js Project Setup, NPM Package
 
 ![NPM Version](https://img.shields.io/npm/v/dev-mvc) ![License](https://img.shields.io/npm/l/dev-mvc) ![Downloads](https://img.shields.io/npm/dw/dev-mvc)
 
@@ -8,17 +10,17 @@
 
 ## Why Use dev-mvc?
 
-- **Boost Productivity:** Spend less time setting up directories and files and more time coding.
-- **Consistency:** Maintain a standardized backend structure for better scalability and readability.
-- **Ideal for Beginners and Teams:** Simplifies the process of starting Node.js backend projects.
+* **Boost Productivity:** Spend less time on tedious directory and file creation, more time on coding.
+* **Maintain Consistency:** Enforce a standardized backend structure for improved scalability and readability.
+* **Ideal for Beginners and Teams:** Simplify the process of starting Node.js backend projects.
 
 ---
 
 ## Key Features
 
-### 🚀 **Automatic Folder Setup**
+### 🚀 **Effortless MVC Folder Creation**
 
-Quickly generates essential backend directories such as:
+Automatically generate essential backend directories like:
 
 - **Controllers**
 - **Models**
@@ -32,13 +34,15 @@ Quickly generates essential backend directories such as:
 
 Includes placeholder files like:
 
-- `user.controller.js`
-- `auth.middleware.js`
-- `db.config.js`
+Get started quickly with pre-made files like:
 
-### 💡 **Standardized Workflow**
+* `user.controller.js`
+* `auth.middleware.js`
+* `db.config.js`
 
-Perfect for individual developers and teams who want a clean, organized structure for backend development.
+### 💡 **Organized Workflow**
+
+Enjoy a clean, well-defined structure for backend development, perfect for individual developers and teams.
 
 ---
 
