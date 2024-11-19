@@ -131,10 +131,10 @@ Submit issues or pull requests on the official [GitHub repository](https://githu
 
 ## 🔗 Links
 
-[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:itssaqlain06@gmail.com) 
+[![Gmail](https://img.shields.io/badge/Gmail-333333?style=for-the-badge&logo=gmail&logoColor=red)](mailto:itssaqlain06@gmail.com) 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/itssaqlain06) 
 [![GitHub](https://img.shields.io/badge/Github-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/itssaqlain06) 
-[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/itssaqlain06)
+[![Instagram](https://img.shields.io/badge/instagram-FF3040?style=for-the-badge&logo=instagram&logoColor=white")](https://www.instagram.com/itssaqlain06)
 
 ---
 
