@@ -1,4 +1,4 @@
-# Node.js MVC Structure Generator: dev-mvc
+# dev-mvc: Node.js MVC Structure Generator
 
 **Tired of manually setting up folder structures for your Node.js backend projects?** `dev-mvc` is a powerful Node.js CLI tool designed to **automate the creation of a standardized MVC folder structure**, saving you time and effort. Focus on writing code with this streamlined setup!
 
@@ -10,9 +10,9 @@
 
 ## Why Use dev-mvc?
 
-* **Boost Productivity:** Spend less time on tedious directory and file creation, more time on coding.
-* **Maintain Consistency:** Enforce a standardized backend structure for improved scalability and readability.
-* **Ideal for Beginners and Teams:** Simplify the process of starting Node.js backend projects.
+- **Boost Productivity:** Spend less time on tedious directory and file creation, more time on coding.
+- **Maintain Consistency:** Enforce a standardized backend structure for improved scalability and readability.
+- **Ideal for Beginners and Teams:** Simplify the process of starting Node.js backend projects.
 
 ---
 
@@ -36,9 +36,9 @@ Includes placeholder files like:
 
 Get started quickly with pre-made files like:
 
-* `user.controller.js`
-* `auth.middleware.js`
-* `db.config.js`
+- `user.controller.js`
+- `auth.middleware.js`
+- `db.config.js`
 
 ### 💡 **Organized Workflow**
 
@@ -75,29 +75,31 @@ project-root/
 
 ## Installation
 
-Install globally via npm:
+Follow these steps to use `dev-mvc` in your project:
 
-```bash
-npm install -g dev-mvc
-```
+1. Create a new project folder:
 
----
+   ```bash
+   mkdir my-backend-project
+   ```
 
-## How to Use
-
-1. Navigate to the directory where you want to set up the project:
+2. Navigate to your project folder:
 
    ```bash
    cd my-backend-project
    ```
 
-2. Run the `dev-mvc` command:
+3. Initialize a new Node.js project:
 
    ```bash
-   dev-mvc
+   npm init -y
    ```
 
-3. Your folder structure will be created instantly!
+4. Install the dev-mvc package:
+
+ ```bash
+   npm install dev-mvc
+   ```
 
 ---
 
@@ -106,7 +108,7 @@ npm install -g dev-mvc
 Stay up-to-date with the latest features:
 
 ```bash
-npm update -g dev-mvc
+npm update dev-mvc
 ```
 
 ---
