@@ -55,7 +55,7 @@ function createBackendFoldersAndFiles() {
         fs.writeFileSync(entryFile, '');
         console.log('Created: server.js');
     } else {
-        console.log('Entry file already exists: server.js');
+        console.log('Entry file already exists: server.js'); 
     }
 }
 
