@@ -38,5 +38,8 @@
   "bugs": {
     "url": "https://github.com/itssaqlain06/dev-mvc/issues"
   },
-  "homepage": "https://github.com/itssaqlain06/dev-mvc"
+  "homepage": "https://github.com/itssaqlain06/dev-mvc",
+  "dependencies": {
+    "dev-mvc": "^1.2.3"
+  }
 }
