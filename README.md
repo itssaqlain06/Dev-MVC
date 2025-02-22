@@ -92,24 +92,8 @@ Follow these steps to use `dev-mvc` in your project:
 3. Initialize a new Node.js project:
 
    ```bash
-   npm init -y
+   npx dev-mvc
    ```
-
-4. Install the dev-mvc package:
-
- ```bash
-   npm install dev-mvc
-   ```
-
----
-
-## Update the Package
-
-Stay up-to-date with the latest features:
-
-```bash
-npm update dev-mvc
-```
 
 ---
 
