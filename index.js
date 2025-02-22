@@ -2,6 +2,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { exec } = require('child_process');
 
 const colors = {
     cyan: "\x1b[36m",
@@ -34,6 +35,25 @@ function displayBranding() {
 ${colors.reset}`);
 }
 
+function ensurePackageJson(callback) {
+    const baseDir = process.cwd();
+    const packageJsonPath = path.join(baseDir, 'package.json');
+
+    if (!fs.existsSync(packageJsonPath)) {
+        console.log(`${colors.blue}No package.json found. Creating one...${colors.reset}`);
+        exec('npm init -y', (err) => {
+            if (err) {
+                console.error(`${colors.red}Error creating package.json: ${err}${colors.reset}`);
+                return callback();
+            }
+            console.log(`${colors.green}package.json created successfully!${colors.reset}`);
+            callback();
+        });
+    } else {
+        callback();
+    }
+}
+
 function createBackendFoldersAndFiles() {
     const baseDir = process.cwd();
 
@@ -61,9 +81,11 @@ function createBackendFoldersAndFiles() {
 
 if (require.main === module) {
     displayBranding();
-    setTimeout(() => {
-        createBackendFoldersAndFiles();
-    }, 2000);
+    ensurePackageJson(() => {
+        setTimeout(() => {
+            createBackendFoldersAndFiles();
+        }, 2000);
+    });
 }
 
 module.exports = createBackendFoldersAndFiles;
