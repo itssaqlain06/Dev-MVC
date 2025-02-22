@@ -14,7 +14,7 @@ const colors = {
     reset: "\x1b[0m"
 };
 
-const folderStructure = {
+const folderStructure = {2
     'controllers': 'user.controller.js',
     'models': 'user.model.js',
     'config': 'db.config.js',
@@ -37,7 +37,7 @@ ${colors.reset}`);
 }
 
 function createBackendFoldersAndFiles() {
-    const baseDir = process.cwd();
+    const baseDir = path.join(process.cwd(), '..', '..');
 
     Object.entries(folderStructure).forEach(([folder, files]) => {
         const dirPath = path.join(baseDir, folder);
