@@ -5,6 +5,15 @@ const path = require('path');
 const readline = require('readline');
 const { exec } = require('child_process');
 
+const colors = {
+    cyan: "\x1b[36m",
+    yellow: "\x1b[33m",
+    blue: "\x1b[34m",
+    green: "\x1b[32m",
+    red: "\x1b[31m",
+    reset: "\x1b[0m"
+};
+
 const folderStructure = {
     'controllers': 'user.controller.js',
     'models': 'user.model.js',
@@ -16,53 +25,40 @@ const folderStructure = {
 };
 
 function displayBranding() {
-    console.log(`
+    console.log(`${colors.cyan}
      ======================================================
     |  Saqlain's MVC Generator                             |
     |  Streamlining backend setup                          |
+    |  https://www.npmjs.com/package/dev-mvc               |
     |  GitHub: https://github.com/itssaqlain06             |
     |  LinkedIn: https://www.linkedin.com/in/itssaqlain06/ |
      ======================================================
-    `);
+${colors.reset}`);
 }
 
 function createBackendFoldersAndFiles() {
-    // Display branding at the beginning
-    displayBranding();
-
-    // Use the client's project root
     const baseDir = process.cwd();
 
-    // Create backend folders and files based on the defined structure
     Object.entries(folderStructure).forEach(([folder, files]) => {
         const dirPath = path.join(baseDir, folder);
         if (!fs.existsSync(dirPath)) {
             fs.mkdirSync(dirPath, { recursive: true });
-            console.log(`Created folder: ${dirPath}`);
-        } else {
-            console.log(`Folder already exists: ${dirPath}`);
         }
-
         const filesArray = Array.isArray(files) ? files : [files];
         filesArray.forEach(file => {
             const filePath = path.join(dirPath, file);
             if (!fs.existsSync(filePath)) {
                 fs.writeFileSync(filePath, '');
-                console.log(`Created file: ${filePath}`);
-            } else {
-                console.log(`File already exists: ${filePath}`);
             }
         });
     });
 
-    // Check and create the entry file 'server.js'
     const entryFile = path.join(baseDir, 'server.js');
     if (!fs.existsSync(entryFile)) {
         fs.writeFileSync(entryFile, '');
-        console.log('Created: server.js');
-    } else {
-        console.log('Entry file already exists: server.js');
     }
+
+    console.log(`${colors.green}Backend folder structure has been created successfully!${colors.reset}`);
 }
 
 function checkNodeModulesAndPrompt(callback) {
@@ -70,28 +66,26 @@ function checkNodeModulesAndPrompt(callback) {
     const nodeModulesPath = path.join(baseDir, 'node_modules');
 
     if (!fs.existsSync(nodeModulesPath)) {
-        // Create a readline interface to prompt the user
         const rl = readline.createInterface({
             input: process.stdin,
             output: process.stdout
         });
 
-        rl.question('node_modules folder is missing. Do you want to create it by running "npm install"? (y/n): ', answer => {
+        rl.question(`${colors.yellow}node_modules folder is missing. Do you want to create it by running "npm install"? (y/n): ${colors.reset}`, answer => {
             if (answer.toLowerCase() === 'y') {
-                console.log('Installing node modules...');
-                // Run npm install in the current directory
+                console.log(`${colors.blue}Installing node modules...${colors.reset}`);
                 exec('npm install', (err, stdout, stderr) => {
                     if (err) {
-                        console.error(`Error installing modules: ${err}`);
+                        console.error(`${colors.red}Error installing modules: ${err}${colors.reset}`);
                     } else {
                         console.log(stdout);
-                        console.log('node_modules installed.');
+                        console.log(`${colors.green}node_modules installed.${colors.reset}`);
                     }
                     rl.close();
                     callback();
                 });
             } else {
-                console.log('Skipping node_modules installation.');
+                console.log(`${colors.blue}Skipping node_modules installation.${colors.reset}`);
                 rl.close();
                 callback();
             }
@@ -101,10 +95,12 @@ function checkNodeModulesAndPrompt(callback) {
     }
 }
 
-// Run the prompt-check and then create the backend folders/files
 if (require.main === module) {
     checkNodeModulesAndPrompt(() => {
-        createBackendFoldersAndFiles();
+        displayBranding();
+        setTimeout(() => {
+            createBackendFoldersAndFiles();
+        }, 2000);
     });
 }
 

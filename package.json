@@ -6,6 +6,7 @@
   "bin": {
     "dev-mvc": "./index.js"
   },
+  "type": "commonjs",
   "scripts": {
     "generate-mvc": "node index.js",
     "start": "node index.js",
@@ -27,7 +28,7 @@
   ],
   "author": {
     "name": "Saqlain",
-    "email": "devsaqlain0@gmail.com",
+    "email": "itssaqlain06@gmail.com",
     "linkedIn": "https://www.linkedin.com/in/itssaqlain06/"
   },
   "repository": {
@@ -38,8 +39,5 @@
   "bugs": {
     "url": "https://github.com/itssaqlain06/dev-mvc/issues"
   },
-  "homepage": "https://github.com/itssaqlain06/dev-mvc",
-  "dependencies": {
-    "dev-mvc": "^1.2.3"
-  }
+  "homepage": "https://github.com/itssaqlain06/dev-mvc"
 }
