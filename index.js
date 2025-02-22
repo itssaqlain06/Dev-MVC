@@ -14,7 +14,7 @@ const colors = {
     reset: "\x1b[0m"
 };
 
-const folderStructure = {2
+const folderStructure = {
     'controllers': 'user.controller.js',
     'models': 'user.model.js',
     'config': 'db.config.js',
