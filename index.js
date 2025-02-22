@@ -29,7 +29,7 @@ function displayBranding() {
      ======================================================
     |  Saqlain's MVC Generator                             |
     |  Streamlining backend setup                          |
-    |  https://www.npmjs.com/package/dev-mvc               |
+    |  NPM: https://www.npmjs.com/package/dev-mvc          |
     |  GitHub: https://github.com/itssaqlain06             |
     |  LinkedIn: https://www.linkedin.com/in/itssaqlain06/ |
      ======================================================
@@ -37,7 +37,7 @@ ${colors.reset}`);
 }
 
 function createBackendFoldersAndFiles() {
-    const baseDir = path.join(process.cwd(), '..', '..');
+    const baseDir = process.cwd();
 
     Object.entries(folderStructure).forEach(([folder, files]) => {
         const dirPath = path.join(baseDir, folder);
