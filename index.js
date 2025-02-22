@@ -2,8 +2,6 @@
 
 const fs = require('fs');
 const path = require('path');
-const readline = require('readline');
-const { exec } = require('child_process');
 
 const colors = {
     cyan: "\x1b[36m",
@@ -61,47 +59,11 @@ function createBackendFoldersAndFiles() {
     console.log(`${colors.green}Backend folder structure has been created successfully!${colors.reset}`);
 }
 
-function checkNodeModulesAndPrompt(callback) {
-    const baseDir = process.cwd();
-    const nodeModulesPath = path.join(baseDir, 'node_modules');
-
-    if (!fs.existsSync(nodeModulesPath)) {
-        const rl = readline.createInterface({
-            input: process.stdin,
-            output: process.stdout
-        });
-
-        rl.question(`${colors.yellow}node_modules folder is missing. Do you want to create it by running "npm install"? (y/n): ${colors.reset}`, answer => {
-            if (answer.toLowerCase() === 'y') {
-                console.log(`${colors.blue}Installing node modules...${colors.reset}`);
-                exec('npm install', (err, stdout, stderr) => {
-                    if (err) {
-                        console.error(`${colors.red}Error installing modules: ${err}${colors.reset}`);
-                    } else {
-                        console.log(stdout);
-                        console.log(`${colors.green}node_modules installed.${colors.reset}`);
-                    }
-                    rl.close();
-                    callback();
-                });
-            } else {
-                console.log(`${colors.blue}Skipping node_modules installation.${colors.reset}`);
-                rl.close();
-                callback();
-            }
-        });
-    } else {
-        callback();
-    }
-}
-
 if (require.main === module) {
-    checkNodeModulesAndPrompt(() => {
-        displayBranding();
-        setTimeout(() => {
-            createBackendFoldersAndFiles();
-        }, 2000);
-    });
+    displayBranding();
+    setTimeout(() => {
+        createBackendFoldersAndFiles();
+    }, 2000);
 }
 
 module.exports = createBackendFoldersAndFiles;
